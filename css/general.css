@@ -1,17 +1,16 @@
+:root {
+  --color-background: 3, 17, 16;
+}
+
 body {
   font-family: "Poppins", sans-serif;
-  background-color: rgb(3, 17, 16);
+  background-color: rgb(var(--color-background));
   color: #fff;
 }
 
 .container {
   margin: 0 auto;
-  padding: 0.5rem 2rem;
-}
-
-.burger-label {
-  display: block;
-  font-size: 2rem;
+  padding: 1rem;
 }
 
 .nav-bar {
@@ -21,6 +20,7 @@ body {
 @media (min-width: 575px) {
   .container {
     max-width: 575px;
+    padding: 0.5rem 2rem;
   }
 
   .burger-label {

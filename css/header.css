@@ -4,10 +4,12 @@ header {
   background-image: url("../img/background-v2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  /* background: rgb(3,17,16); */
+  /* background: linear-gradient(0deg, rgb(72, 119, 116) 0%, rgba(3,17,16,1) 100%);  */
 }
 
 nav {
-  background-color: rgba(3, 17, 16, 0.8);
+  background-color: rgba(var(--color-background), .8);
 }
 
 nav .container {
@@ -28,20 +30,56 @@ nav .container {
   color: #fff;
   text-decoration: none;
   opacity: .8;
+  display: flex;
+  align-items: center;
 }
 
 .nav-bar-items a:hover {
   opacity: 1;
 }
 
+.nav-bar-items a:last-child {
+  padding-right: 0;
+}
+
+.nav-bar-items a .las {
+  font-size: 1.2rem;
+  padding-top: 2px;
+}
+
 .logo {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100px;
+    width: 90px;
+}
+
+.logo img {
+  width: 25px;
 }
 
 .logo-text {
     font-size: 1.5rem;
     font-weight: 700;
+}
+
+.burger-label {
+  font-size: 2rem;
+  position: relative;
+}
+
+.burger-label > a {
+  color: #fff;
+  opacity: 0.8;
+}
+
+.burger-label > a:hover {
+  opacity: 1;
+}
+
+#burguer-menu {
+  position: absolute;
+  right: -1rem;
+  background-color:rgba(var(--color-background), .8);
+  top: calc(3rem + 2px);
 }
