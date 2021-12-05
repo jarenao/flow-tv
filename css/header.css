@@ -1,0 +1,47 @@
+header {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../img/background-v2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+nav {
+  background-color: rgba(3, 17, 16, 0.8);
+}
+
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-bar-items {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.nav-bar-items a {
+  padding: .5rem;
+  font-size: .8rem;
+  color: #fff;
+  text-decoration: none;
+  opacity: .8;
+}
+
+.nav-bar-items a:hover {
+  opacity: 1;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100px;
+}
+
+.logo-text {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
