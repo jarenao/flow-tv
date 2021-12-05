@@ -64,11 +64,11 @@ nav .container {
 }
 
 .burger-label {
-  font-size: 2rem;
   position: relative;
 }
 
 .burger-label > a {
+  font-size: 2rem;
   color: #fff;
   opacity: 0.8;
 }
@@ -82,4 +82,13 @@ nav .container {
   right: -1rem;
   background-color:rgba(var(--color-background), .8);
   top: calc(3rem + 2px);
+  padding: 2rem;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+#burguer-menu a {
+  padding: .5rem;
 }
