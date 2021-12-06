@@ -14,6 +14,7 @@ nav .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 2;
 }
 .nav-bar {
   position: relative;
@@ -24,6 +25,7 @@ nav .container {
   justify-content: space-between;
   align-items: center;
   width: 95px;
+  z-index: 2;
 }
 
 .logo img {
@@ -36,16 +38,18 @@ nav .container {
 }
 
 .nav-bar-items {
-  display: none;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: absolute;
   right: -2rem;
-  top: 42px;
+  top: -500px;
   background-color: rgba(var(--color-background), 0.8);
   padding: 0 0 1.5rem 0;
   width: 100vw;
+  transition: all ease .2s;
+  z-index: 1;
 }
 
 .nav-bar-items a {
@@ -81,6 +85,7 @@ nav .container {
   font-size: 2rem;
   color: var(--color-text);
   cursor: pointer;
+  z-index: 2;
 }
 
 #burger-checkbox {
@@ -94,7 +99,19 @@ nav .container {
 }
 
 #burger-checkbox:checked ~ .nav-bar-items {
-  display: flex;
+  top: 43px;
+  transition: all ease .2s;
+  border-top: 1px solid #9b9b9b;
+  border-bottom: 1px solid #9b9b9b;
+}
+
+#burger-checkbox ~ .burger-label i {
+  transform: rotate(0deg);
+  transition: all ease .2s;
+}
+#burger-checkbox:checked ~ .burger-label i {
+  transform: rotate(90deg);
+  transition: all ease .2s;
 }
 
 @media (min-width: 575px) {
