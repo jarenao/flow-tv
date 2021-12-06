@@ -1,0 +1,26 @@
+.main-video {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.main-video .video-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90vw;
+    position: absolute;
+    top: 1rem;
+    font-style: italic;
+    font-size: .9rem;
+    opacity: .8;
+}
+
+.main-video .video-icons {
+    font-size: 1.5rem;
+}
+
+.main-video video {
+    width: 100vw;
+    height: 100%;
+}

@@ -1,9 +1,6 @@
 header {
   width: 100vw;
-  height: 100vh;
-  background-image: url("../img/background-v2.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+  /* height: 100%; */
 }
 
 nav {
@@ -50,6 +47,7 @@ nav .container {
   width: 100vw;
   transition: all ease .2s;
   z-index: 1;
+  opacity: 0;
 }
 
 .nav-bar-items a {
@@ -101,6 +99,8 @@ nav .container {
 #burger-checkbox:checked ~ .nav-bar-items {
   top: 43px;
   transition: all ease .2s;
+  opacity: 1;
+  /* TODO: Revisar border para ajustes visuales */
   border-top: 1px solid #9b9b9b;
   border-bottom: 1px solid #9b9b9b;
 }
@@ -125,6 +125,7 @@ nav .container {
     background-color: inherit;
     padding: 0;
     width: auto;
+    opacity: 1;
   }
 
   .nav-bar-items a {

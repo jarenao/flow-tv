@@ -5,8 +5,12 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: rgb(var(--color-background));
   color:var(--color-text);
+  background-color: rgb(var(--color-background));
+  background-image: url("../img/background-v2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
 
 .container {
