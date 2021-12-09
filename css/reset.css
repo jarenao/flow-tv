@@ -39,6 +39,6 @@ body {
 ol, ul {
 	list-style: none;
 }
-button, a, .transition {
+button, a, .transition, label {
 	transition: all ease .2s;
 }

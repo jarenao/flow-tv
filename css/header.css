@@ -1,6 +1,5 @@
 header {
   width: 100vw;
-  /* height: 100%; */
 }
 
 nav {
@@ -41,7 +40,7 @@ nav .container {
   justify-content: center;
   align-items: center;
   position: absolute;
-  right: -2rem;
+  right: -1rem;
   top: -500px;
   background-color: rgba(var(--color-background), 0.8);
   padding: 0 0 1.5rem 0;
@@ -80,7 +79,6 @@ nav .container {
 
 .burger-label {
   position: relative;
-  right: -1rem;
   font-size: 2rem;
   color: var(--color-text);
   cursor: pointer;
@@ -102,8 +100,8 @@ nav .container {
   transition: all ease .2s;
   opacity: 1;
   /* TODO: Revisar border para ajustes visuales */
-  /* border-top: 3px solid #000000; */
   border-bottom: 1px solid #9b9b9b;
+  z-index: 3;
 }
 
 #burger-checkbox ~ .burger-label i {
