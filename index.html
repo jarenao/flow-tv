@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./css/fonts.css" />
     <link rel="stylesheet" href="./css/general.css" />
     <link rel="stylesheet" href="./css/header.css" />
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/main.css" />
     <link
       rel="stylesheet"
       href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
@@ -42,23 +42,56 @@
         </div>
       </nav>
     </header>
-    <main class="">
+    <main class="container">
       <div class="main-video">
-        <div class="video-info container">
-          <h2>Estreno</h2>
-          <div class="video-icons">
-            <span><i class="lar la-star"></i></span>
-            <span><i class="las la-play"></i></span>
+        <div class="main-video-info">
+          <h2>Estreno de la semana</h2>
+          <div class="main-video-icons">
+            <input type="checkbox" id="star-checkbox" />
+            <label for="star-checkbox" class="star-label">
+              <i class="lar la-star"></i>
+            </label>
+            
+            <a href="#"><i class="las la-play"></i></a>
           </div>
         </div>
         <video width="1920" height="1080" autoplay muted controls>
           <source src="./video/main.mp4" type="video/mp4" />
           <source src="./video/main.ogg" type="video/ogg" />
-          Lo sentimos, pero tu navegador no soporta la reproducción de videos. Tendrás que buscar otro ;) 
+          Lo sentimos, pero tu navegador no soporta la reproducción de videos.
+          Tendrás que buscar otro ;)
         </video>
       </div>
-    
-      
+
+      <div class="main-rel">
+        <div class="main-rel-item item1">
+          <div class="multi-button">
+            <button class="las la-play"></button>
+            <input type="checkbox" id="rel-star-checkbox1" />
+            <label for="star-checkbox" class="star-label">
+              <i class="lar la-star"></i>
+            </label>
+            <!-- <button class="lar la-star"></button> -->
+          </div>
+          <a href="#" class="main-rel-item-title">
+            <h4>Les Envahisseurs attaquent</h4>
+            <span class="rel-rating-year">
+              <span>Rating: 3.5 / 5</span> 
+              <span>Year: 1967</span>
+            </span>
+            <p>
+              Tremenda lucha por la supervivencia en la jungla de hormigón, para
+              dos enemigo acérrimos, incapaces de perdonarse.
+            </p>
+          </a>
+        </div>
+
+        <div class="main-rel-item item2"></div>
+        <div class="main-rel-item item3"></div>
+        <div class="main-rel-item item4"></div>
+        <div class="main-rel-item item5"></div>
+        <div class="main-rel-item item6"></div>
+      </div>
     </main>
     <footer></footer>
   </body>
