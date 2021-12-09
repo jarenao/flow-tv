@@ -41,6 +41,9 @@ body {
   .container {
     max-width: 992px;
   }
+  .main-rel-item.item5, .main-rel-item.item6 {
+    display: none;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -52,5 +55,8 @@ body {
 @media (min-width: 1280px) {
   .container {
     max-width: 1280px;
+  }
+  .main-rel-item.item5 {
+    display: block;
   }
 }
