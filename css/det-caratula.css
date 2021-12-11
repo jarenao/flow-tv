@@ -19,7 +19,7 @@
     
 }
 .caratula {
-    background-image: url("../img/caratulas/ataquent.jpg");
+    background-image: url("../img/caratulas/cantiflas.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -54,11 +54,13 @@
     font-size: 2rem;
     font-weight: 700;
     text-transform: uppercase;
-    color: var(--color-resalt)
+    color: var(--color-resalt);
+    line-height: 1.1;
 }
 
 .info > span {
     font-size: .8rem;
+    opacity: .7;
 }
 
 .info > span.separador {
