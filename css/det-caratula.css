@@ -1,12 +1,13 @@
 .content {
     position: relative;
     background-color: rgb(var(--color-background));
-    margin-top: 1rem;
+    margin: 1rem auto;
+    padding-bottom: 1rem;
 }
 
 .content, .caratula {
-    border-top-left-radius: var(--radio);
-    border-top-right-radius: var(--radio);
+    border-radius: var(--radio);
+    border-radius: var(--radio);
 }
 
 .caratula, .sombras {

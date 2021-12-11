@@ -21,6 +21,12 @@ body {
   padding: 0rem 1rem;
 }
 
+.info > div ul {
+  border: none;
+  border-top: 1px var(--color-resalt) solid;
+  padding-top: .7rem;
+}
+
 @media (min-width: 575px) {
   .container {
     max-width: 575px;
@@ -40,6 +46,7 @@ body {
   .info > div {
     grid-template-columns: 1fr;
   }
+
 }
 
 @media (min-width: 992px) {
@@ -52,6 +59,13 @@ body {
 
   .info > div {
     grid-template-columns: 1.5fr 1fr;
+  }
+  
+  .info > div ul {
+    border: none;
+    border-left: 1px var(--color-resalt) solid;
+    padding: 0;
+    padding-left:.7rem;
   }
 }
 
