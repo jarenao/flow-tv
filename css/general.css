@@ -1,6 +1,7 @@
 :root {
   --color-background: 3, 17, 16;
   --color-text: #fff;
+  --color-resalt: #127369;
   --radio: .5rem;
 }
 
@@ -35,6 +36,10 @@ body {
   .container {
     max-width: 768px;
   }
+
+  .info > div {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (min-width: 992px) {
@@ -43,6 +48,10 @@ body {
   }
   .main-rel-item.item5, .main-rel-item.item6 {
     display: none;
+  }
+
+  .info > div {
+    grid-template-columns: 1.5fr 1fr;
   }
 }
 
