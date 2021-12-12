@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=5.0" />
     <title>Bienvenidos a Flow</title>
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/fonts.css" />
@@ -19,10 +19,10 @@
     <header>
       <nav>
         <div class="container">
-          <div class="logo">
+          <a href="/" class="logo">
             <img src="./img/logo-flow.png" alt="logo Flow" />
             <h1 class="logo-text">Flow</h1>
-          </div>
+          </a>
           <div class="nav-bar">
             <input type="checkbox" id="burger-checkbox" />
             <label for="burger-checkbox" class="burger-label">
@@ -30,11 +30,11 @@
             </label>
             <div class="nav-bar-items" id="burguer-menu">
               <a href="det-pelicula.html">Novedades</a>
-              <a href="#">Series</a>
-              <a href="#">Películas</a>
-              <a href="#"><span>Favoritos</span><i class="las la-star"></i></a>
-              <a href="#"><span>Búsqueda</span><i class="las la-search"></i></a>
-              <a href="#"
+              <a href="det-pelicula.html">Series</a>
+              <a href="det-pelicula.html">Películas</a>
+              <a href="det-pelicula.html" rel="bookmark"><span>Favoritos</span><i class="las la-star"></i></a>
+              <a href="#" rel="search"><span>Búsqueda</span><i class="las la-search"></i></a>
+              <a href="/" 
                 ><span>Logout</span><i class="las la-sign-out-alt"></i
               ></a>
             </div>
@@ -43,7 +43,7 @@
       </nav>
     </header>
     <main class="container">
-      <div class="main-video">
+      <section class="main-video">
         <div class="main-video-info">
           <h2>Estreno de la semana</h2>
           <div class="main-video-icons">
@@ -61,11 +61,10 @@
           Lo sentimos, pero tu navegador no soporta la reproducción de videos.
           Tendrás que buscar otro ;)
         </video>
-      </div>
-
-      <div class="main-rel">
-        <div class="main-rel-item item1">
-          <a href="#rel-star-checkbox1" class="main-rel-item-title">
+      </section>
+      <section class="main-rel">
+        <article class="main-rel-item item1">
+          <a href="det-pelicula.html" class="main-rel-item-title">
             <h4>Les Envahisseurs attaquent</h4>
             <span class="rel-rating-year">
               <span>IMDb: 3.5 / 5</span>
@@ -73,7 +72,7 @@
             </span>
             <p>
               Tremenda lucha por la supervivencia en la jungla de hormigón, para
-              dos enemigo acérrimos, incapaces de perdonarse. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              dos enemigo acérrimos, incapaces de perdonarse.
             </p>
           </a>
           <div class="multi-button">
@@ -82,10 +81,10 @@
               <i class="lar la-star"></i>
             </label>
           </div> 
-        </div>
+        </article>
 
-        <div class="main-rel-item item2">
-          <a href="#rel-star-checkbox2" class="main-rel-item-title">
+        <article class="main-rel-item item2">
+          <a href="det-pelicula.html" class="main-rel-item-title">
             <h4>Camarada</h4>
             <span class="rel-rating-year">
               <span>IMDb: 2 / 5</span>
@@ -101,9 +100,9 @@
               <i class="lar la-star"></i>
             </label>
           </div>
-        </div>
-        <div class="main-rel-item item3">
-          <a href="#rel-star-checkbox3" class="main-rel-item-title">
+        </article>
+        <article class="main-rel-item item3">
+          <a href="det-pelicula.html" class="main-rel-item-title">
             <h4>Festival de Cantiflas</h4>
             <span class="rel-rating-year">
               <span>IMDb: 4.7 / 5</span>
@@ -119,9 +118,9 @@
               <i class="lar la-star"></i>
             </label>
           </div>
-        </div>
-        <div class="main-rel-item item4">
-          <a href="#rel-star-checkbox4" class="main-rel-item-title">
+        </article>
+        <article class="main-rel-item item4">
+          <a href="det-pelicula.html" class="main-rel-item-title">
             <h4>Casablanca</h4>
             <span class="rel-rating-year">
               <span>IMDb: 5 / 5</span>
@@ -137,9 +136,9 @@
               <i class="lar la-star"></i>
             </label>
           </div>
-        </div>
-        <div class="main-rel-item item5">
-          <a href="#rel-star-checkbox5" class="main-rel-item-title">
+        </article>
+        <article class="main-rel-item item5">
+          <a href="det-pelicula.html" class="main-rel-item-title">
             <h4>Tiempos Modernos</h4>
             <span class="rel-rating-year">
               <span>IMDb: 5 / 5</span>
@@ -155,9 +154,9 @@
               <i class="lar la-star"></i>
             </label>
           </div>
-        </div>
-        <div class="main-rel-item item6">
-          <a href="#rel-star-checkbox6" class="main-rel-item-title">
+        </article>
+        <article class="main-rel-item item6">
+          <a href="det-pelicula.html" class="main-rel-item-title">
             <h4>Dos pares de mellizos</h4>
             <span class="rel-rating-year">
               <span>IMDb: 3.8 / 5</span>
@@ -173,9 +172,13 @@
               <i class="lar la-star"></i>
             </label>
           </div>
-        </div>
-      </div>
+        </article>
+      </section>
     </main>
-    <footer></footer>
+    <footer>
+      <section class="container">
+        <p>&#169; 2021 FlowTv</p>
+      </section>
+    </footer>
   </body>
 </html>

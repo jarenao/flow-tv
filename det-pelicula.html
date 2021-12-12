@@ -3,12 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=5.0" />
     <title>Bienvenidos a Flow</title>
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/fonts.css" />
     <link rel="stylesheet" href="./css/general.css" />
     <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/det-caratula.css" />
     <link
       rel="stylesheet"
@@ -19,22 +20,22 @@
     <header>
       <nav>
         <div class="container">
-          <div class="logo">
+          <a href="/" class="logo">
             <img src="./img/logo-flow.png" alt="logo Flow" />
             <h1 class="logo-text">Flow</h1>
-          </div>
+          </a>
           <div class="nav-bar">
             <input type="checkbox" id="burger-checkbox" />
             <label for="burger-checkbox" class="burger-label">
               <i class="las la-ellipsis-v"></i>
             </label>
             <div class="nav-bar-items" id="burguer-menu">
-              <a href="#">Novedades</a>
-              <a href="#">Series</a>
-              <a href="#">Películas</a>
-              <a href="#"><span>Favoritos</span><i class="las la-star"></i></a>
-              <a href="#"><span>Búsqueda</span><i class="las la-search"></i></a>
-              <a href="#"
+              <a href="/">Novedades</a>
+              <a href="/">Series</a>
+              <a href="/">Películas</a>
+              <a href="/" rel="bookmark"><span>Favoritos</span><i class="las la-star"></i></a>
+              <a href="#" rel="search"><span>Búsqueda</span><i class="las la-search"></i></a>
+              <a href="/"
                 ><span>Logout</span><i class="las la-sign-out-alt"></i
               ></a>
             </div>
@@ -43,7 +44,7 @@
       </nav>
     </header>
     <main class="container">
-      <div class="content">
+      <section class="content">
         <div class="info container">
           <h1>Festival de Cantinflas</h1>
           <span>IMDb: 3.5 / 5</span>
@@ -75,14 +76,14 @@
 
             <ul>
               <li>Charles Chaplin: Charlot</li>
-              <li>Paulette Goddard: niña pobre (protagonista).</li>
-              <li>Henry Bergman: Propietario del café.</li>
+              <li>Paulette Goddard: Niña pobre</li>
+              <li>Henry Bergman: Propietario del café</li>
               <li>Tiny Sandford: Big Bill</li>
               <li>Chester Conklin: Mecánico</li>
               <li>Hank Mann: Ladrón</li>
               <li>Stanley Blystone: Padre de la protagonista</li>
-              <li>Al Ernest Garcia: Presidente de la Steel Corp. Electro</li>
-              <li>Richard Alexander: Alcalde de la prisión (Dick Alexander)</li>
+              <li>Al Ernest Garcia: Presidente de la Steel Corp</li>
+              <li>Richard Alexander: Alcalde de la prisión</li>
               <li>Cecil Reynolds: Ministro</li>
               <li>Mira McKinney: La esposa del ministro</li>
               <li>Murdock MacQuarrie: J. Widdecombre Billows</li>
@@ -96,8 +97,124 @@
           </a>
         </div>
         <div class="sombras"></div>
-      </div>
+      </section>
+      <section class="main-rel">
+        <article class="main-rel-item item1">
+          <a href="det-pelicula.html" class="main-rel-item-title">
+            <h4>Les Envahisseurs attaquent</h4>
+            <span class="rel-rating-year">
+              <span>IMDb: 3.5 / 5</span>
+              <span>Year: 1967</span>
+            </span>
+            <p>
+              Tremenda lucha por la supervivencia en la jungla de hormigón, para
+              dos enemigo acérrimos, incapaces de perdonarse.
+            </p>
+          </a>
+          <div class="multi-button">
+            <input type="checkbox" id="rel-star-checkbox1" />
+            <label for="rel-star-checkbox1" class="star-label">
+              <i class="lar la-star"></i>
+            </label>
+          </div> 
+        </article>
+
+        <article class="main-rel-item item2">
+          <a href="det-pelicula.html" class="main-rel-item-title">
+            <h4>Camarada</h4>
+            <span class="rel-rating-year">
+              <span>IMDb: 2 / 5</span>
+              <span>Year: 1953</span>
+            </span>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            </p>
+          </a>
+          <div class="multi-button">
+            <input type="checkbox" id="rel-star-checkbox2" />
+            <label for="rel-star-checkbox2" class="star-label">
+              <i class="lar la-star"></i>
+            </label>
+          </div>
+        </article>
+        <article class="main-rel-item item3">
+          <a href="det-pelicula.html" class="main-rel-item-title">
+            <h4>Festival de Cantiflas</h4>
+            <span class="rel-rating-year">
+              <span>IMDb: 4.7 / 5</span>
+              <span>Year: 1959</span>
+            </span>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum cumque modi corrupti, animi, dolores neque nam .
+            </p>
+          </a>
+          <div class="multi-button">
+            <input type="checkbox" id="rel-star-checkbox3" />
+            <label for="rel-star-checkbox3" class="star-label">
+              <i class="lar la-star"></i>
+            </label>
+          </div>
+        </article>
+        <article class="main-rel-item item4">
+          <a href="det-pelicula.html" class="main-rel-item-title">
+            <h4>Casablanca</h4>
+            <span class="rel-rating-year">
+              <span>IMDb: 5 / 5</span>
+              <span>Year: 1961</span>
+            </span>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            </p>
+          </a>
+          <div class="multi-button">
+            <input type="checkbox" id="rel-star-checkbox4" />
+            <label for="rel-star-checkbox4" class="star-label">
+              <i class="lar la-star"></i>
+            </label>
+          </div>
+        </article>
+        <article class="main-rel-item item5">
+          <a href="det-pelicula.html" class="main-rel-item-title">
+            <h4>Tiempos Modernos</h4>
+            <span class="rel-rating-year">
+              <span>IMDb: 5 / 5</span>
+              <span>Year: 1955</span>
+            </span>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            </p>
+          </a>
+          <div class="multi-button">
+            <input type="checkbox" id="rel-star-checkbox5" />
+            <label for="rel-star-checkbox5" class="star-label">
+              <i class="lar la-star"></i>
+            </label>
+          </div>
+        </article>
+        <article class="main-rel-item item6">
+          <a href="det-pelicula.html" class="main-rel-item-title">
+            <h4>Dos pares de mellizos</h4>
+            <span class="rel-rating-year">
+              <span>IMDb: 3.8 / 5</span>
+              <span>Year: 1949</span>
+            </span>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            </p>
+          </a>
+          <div class="multi-button">
+            <input type="checkbox" id="rel-star-checkbox6" />
+            <label for="rel-star-checkbox6" class="star-label">
+              <i class="lar la-star"></i>
+            </label>
+          </div>
+        </article>
+      </section>
     </main>
-    <footer></footer>
+    <footer>
+      <section class="container">
+        <p>&#169; 2021 FlowTv</p>
+      </section>
+    </footer>
   </body>
 </html>

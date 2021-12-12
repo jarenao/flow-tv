@@ -16,6 +16,13 @@ body {
   overflow-x: hidden;
 }
 
+header {
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  z-index: 5;
+}
+
 .container {
   margin: 0 auto;
   padding: 0rem 1rem;
@@ -24,13 +31,33 @@ body {
 .info > div ul {
   border: none;
   border-top: 1px var(--color-resalt) solid;
-  padding-top: .7rem;
+  padding-top: 1rem;
+}
+
+main.container {
+  margin-top: 4rem;
+}
+
+footer {
+  background-color: rgba(var(--color-background), 0.8);
+  padding: .5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: .8rem;
 }
 
 @media (min-width: 575px) {
+  header {
+    position: relative;
+  }
   .container {
     max-width: 575px;
     padding: 0rem 2rem;
+  }
+
+  main.container {
+    margin-top: 0;
   }
 
   .burger-label {
@@ -65,7 +92,7 @@ body {
     border: none;
     border-left: 1px var(--color-resalt) solid;
     padding: 0;
-    padding-left:.7rem;
+    padding-left:1rem;
   }
 }
 
